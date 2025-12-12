@@ -18,6 +18,7 @@ public class Variables {
         // 1. declaration
         // 2. assignment
 
+        // integer type
         int age = 21;
         int year = 2025;
         int quantity = 12; //quantity is always in an integer form
@@ -25,6 +26,27 @@ public class Variables {
         System.out.println("The year is " + year);
         System.out.println("My age is " + age);
         System.out.println("The year is " + "year");
+
+        // double type
+        double price = 24.86;
+        double gpa = 8.9;
+        double temperature = 34.6;
+        System.out.println("The price is $ " + price);
+        System.out.println("The gpa is " + gpa);
+        System.out.println("The temperature is " + temperature);
+
+        // char type
+        char gender = 'M';
+        char grade = 'A';
+        char symbol = '#';
+        System.out.println("The gender is " + gender);
+        System.out.println("The grade is " + symbol + grade);
+
+        // boolen type
+        boolean isStudent = true;
+        boolean forSale = false;
+        System.out.println("is Aman student " + isStudent);
+        System.out.println("is this t-shirt " + forSale);
 
     }
 }
