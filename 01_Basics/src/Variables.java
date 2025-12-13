@@ -12,6 +12,8 @@ public class Variables {
         // double       array
         // char         object
         // boolen
+        // float
+        // long
 
         // 2 steps to create a variable
         // ----------------------------
@@ -47,6 +49,17 @@ public class Variables {
         boolean forSale = false;
         System.out.println("is Aman student " + isStudent);
         System.out.println("is this t-shirt " + forSale);
+
+        // string type
+        String name = "Gopala Chachre";
+        String food = "Dal Batti";
+        System.out.println("My name is " + name);
+        System.out.println("My Fev food is " + food + "\n");
+
+        System.out.println("Hello " + name);
+        System.out.println("You are " + age + " Year old");
+        System.out.println("Your gpa is: " + gpa);
+        System.out.println("Your grade is: " + grade);
 
     }
 }
