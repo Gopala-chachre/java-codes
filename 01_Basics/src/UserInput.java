@@ -29,6 +29,20 @@ public class UserInput {
         System.out.println("your GPA : " + gpa);
         System.out.println("Student : " + isStudent);
 
+
+        /*
+        // COMMON ISSUES
+        System.out.print("Enter your Age: ");
+        int age = input.nextInt();
+        input.nextLine();// to resolve the issue
+
+        System.out.print("Enter your Favorite color: ");
+        String color = input.nextLine();
+
+        System.out.println("You are " + age + " years old!");
+        System.out.println("You like the color " + color);
+        */
+
         input.close();
     }
 }
