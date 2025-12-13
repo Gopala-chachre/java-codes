@@ -17,29 +17,17 @@ public class MiniGame {
         String exclamation1;
         String name1, place1;
 
-        System.out.print("Enter an adjective: ");
+        System.out.print("Enter an adjective (description): ");
         adjective1 = input.nextLine();
 
-        System.out.print("Enter an adjective: ");
-        adjective2 = input.nextLine();
-
-        System.out.print("Enter an adjective: ");
-        adjective3 = input.nextLine();
-
-        System.out.print("Enter an adjective: ");
-        adjective4 = input.nextLine();
-
-        System.out.print("Enter a Noun: ");
+        System.out.print("Enter a Noun (any object) : ");
         noun1 = input.nextLine();
 
-        System.out.print("Enter a Noun: ");
-        noun2 = input.nextLine();
+        System.out.print("Enter an adjective (animal): ");
+        adjective2 = input.nextLine();
 
         System.out.print("Enter a verb: ");
         verb1 = input.nextLine();
-
-        System.out.print("Enter a verb: ");
-        verb2 = input.nextLine();
 
         System.out.print("Enter a adverb: ");
         adverb1 = input.nextLine();
@@ -47,18 +35,30 @@ public class MiniGame {
         System.out.print("Enter a exclamation mark: ");
         exclamation1 = input.nextLine();
 
-        System.out.print("Enter a name: ");
+        System.out.print("Enter a Noun (any object) : ");
+        noun2 = input.nextLine();
+
+        System.out.print("Enter a name (person or animal) : ");
         name1 = input.nextLine();
+
+        System.out.print("Enter a verb: ");
+        verb2 = input.nextLine();
 
         System.out.print("Enter a place: ");
         place1 = input.nextLine();
 
+        System.out.print("Enter an adjective (any food): ");
+        adjective3 = input.nextLine();
+
+        System.out.print("Enter an adjective (description): ");
+        adjective4 = input.nextLine();
+
         System.out.println("One day, I woke up feeling very " + adjective1 );
-        System.out.println("I grabbed my " + noun1 + " and ran outside to see a " + adjective2 + " (animal).");
-        System.out.println("Suddenly, it started to " + verb1 + " very " + adverb1 + " .");
-        System.out.println("I shouted " + exclamation1 + " and dropped my " + noun2 + " .");
+        System.out.println("I grabbed my " + noun1 + " and ran outside to see a " + adjective2 + ".");
+        System.out.println("Suddenly, it started to " + verb1 + " very " + adverb1 + ".");
+        System.out.println("I shouted " + exclamation1 + " and dropped my " + noun2 + ".");
         System.out.println("My best friend " + name1 +" laughed and began to " + verb2 + " with me.");
-        System.out.println("We went to the " + place1 + " to eat some " + adjective3 + " (food).");
+        System.out.println("We went to the " + place1 + " to eat some " + adjective3 + ".");
         System.out.println("It was the most " + adjective4 + " day of my life!");
 
         input.close();
