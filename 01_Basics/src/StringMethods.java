@@ -1,7 +1,11 @@
 // it will show the different string methods
 
+import java.util.Scanner;
+
 public class StringMethods {
     public static void main (String[] args){
+
+        Scanner input = new Scanner(System.in);
 
         String name = "   God Usopp!   ";
 
@@ -43,6 +47,27 @@ public class StringMethods {
         }else {
             System.out.println("hello " + name);
         }
+
+
+        // one of the important
+        // .substring() = A method used to extract a portion of string .substring(start, end)
+
+        String email;
+        System.out.print("Enter your Email: ");
+        email = input.nextLine();
+
+        if (email.contains("@")){
+            String userName = email.substring(0, email.indexOf("@"));
+            String domain = email.substring(email.indexOf("@")+1);
+
+            System.out.println("Your user name is: " + userName);
+            System.out.println("Your domain is: " + domain);
+        }else {
+            System.out.println("You entered an invalid email.");
+        }
+
+
+        input.close();
 
     }
 }
