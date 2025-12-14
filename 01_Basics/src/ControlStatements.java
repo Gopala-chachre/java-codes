@@ -40,6 +40,33 @@ public class ControlStatements {
             System.out.println("you are a child!");
         }
 
+        // nested if
+        boolean isStudent;
+        boolean isSenior;
+        double price = 59.99;
+
+        System.out.println("are you student (true/false): ");
+        isStudent = input.nextBoolean();
+
+        System.out.println("are you a senior (true/false): ");
+        isSenior = input.nextBoolean();
+
+        if (isStudent){
+            if (isSenior){
+                System.out.println("you get a student + senior discount of 19%");
+                price *= 0.81;
+                System.out.println("So your total amount is: ₹" + price);
+            }else {
+                System.out.println("you get a student discount of 10%");
+                price *= 0.9;
+                System.out.println("So your total amount is: ₹" + price);
+            }
+        }else {
+            System.out.println("you get a senior discount of 12%");
+            price *= 0.88;
+            System.out.println("So your total amount is: ₹" + price);
+        }
+
         input.close();
     }
 }
