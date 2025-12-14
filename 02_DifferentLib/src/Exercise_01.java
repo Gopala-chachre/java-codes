@@ -18,7 +18,7 @@ public class Exercise_01 {
 
         hypotenuse = Math.sqrt(Math.pow(height, 2) + Math.pow(perpendicular, 2));
 
-        System.out.println("The hypotenuse of a tringle with height " + height + "cm² and perpendicular " + perpendicular + "cm² is: " + hypotenuse + "cm²");
+        System.out.println("The hypotenuse of a tringle with height " + height + "cm and perpendicular " + perpendicular + "cm is: " + hypotenuse + "cm");
 
         input.close();
     }
