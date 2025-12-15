@@ -16,10 +16,10 @@ public class Exercise02 {
 
         if (choice.equalsIgnoreCase("c")){
             convertedTemp = temperature*9.0/5.0 + 32 ;
-            System.out.println("converted temperature is: " + convertedTemp);
+            System.out.printf("converted temperature is: %.2f°C", convertedTemp);
         } else if (choice.equalsIgnoreCase("f")) {
             convertedTemp = (temperature - 32)*5.0/9.0 ;
-            System.out.println("converted temperature is: " + convertedTemp);
+            System.out.printf("converted temperature is: %.2f°F", convertedTemp);
         } else {
             System.out.println("You enter wrong choice.");
         }
