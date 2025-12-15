@@ -36,16 +36,6 @@ public class ControlStatements {
             System.out.println("you are adult!");
         } else if (age < 0) {
             System.out.println("you haven't born yet!");
-            switch (day){
-                case "Monday" -> System.out.println("It is a weekday 1.");
-                case "Tuesday" -> System.out.println("It is a weekday 2.");
-                case "Wednesday" -> System.out.println("It is a weekday 3.");
-                case "Thursday" -> System.out.println("It is a weekday 4.");
-                case "Friday" -> System.out.println("It is a weekday 5.");
-                case "Saturday", "Sunday"
-                        -> System.out.println("It is a weekend.");
-                default -> System.out.println(day + " is not a day.");
-            }
 
             // while loop = repeat some code forever
             //              while some condition remains true
@@ -112,6 +102,16 @@ public class ControlStatements {
         System.out.print("Enter the Day: ");
         day = input.nextLine();
 
+        switch (day){
+            case "Monday" -> System.out.println("It is a weekday 1.");
+            case "Tuesday" -> System.out.println("It is a weekday 2.");
+            case "Wednesday" -> System.out.println("It is a weekday 3.");
+            case "Thursday" -> System.out.println("It is a weekday 4.");
+            case "Friday" -> System.out.println("It is a weekday 5.");
+            case "Saturday", "Sunday"
+                    -> System.out.println("It is a weekend.");
+            default -> System.out.println(day + " is not a day.");
+        }
 
         // break = break out of a loop (stop)
         // continue = skip current iteration of a loop (skip)
