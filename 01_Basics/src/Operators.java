@@ -86,6 +86,8 @@ public class Operators {
         System.out.println("-----------------------------------------------------");
 
         // Ternary Operator (condition ? value1 : value2)
+        // it returns 1 or 2 values if a condition is true
+        // variable = (condition) ? ifTrue : ifFalse;
         System.out.println("Representation of Ternary Operators :");
         int larger = (a > b) ? a : b;
         System.out.println("larger of two is : " + larger);
