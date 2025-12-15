@@ -23,7 +23,13 @@ public class Exercise03 {
             case '+' -> System.out.printf("The resultant is : %.2f", num1 + num2);
             case '-' -> System.out.printf("The resultant is : %.2f", num1 - num2);
             case '*' -> System.out.printf("The resultant is : %.2f", num1 * num2);
-            case '/' -> System.out.printf("The resultant is : %.2f", num1 / num2);
+            case '/' -> {
+                if (num2 == 0){
+                    System.out.println("cannot divide by Zero.");
+                }else{
+                    System.out.printf("The resultant is : %.2f", num1 / num2);
+                }
+            }
             case '^' -> System.out.printf("The resultant is : %.2f", Math.pow(num1, num2));
             default -> System.out.println("You enter wrong operator!");
         }
