@@ -85,6 +85,28 @@ public class ControlStatements {
             default -> System.out.println(day + " is not a day.");
         }
 
+        // while loop = repeat some code forever
+        //              while some condition remains true
+
+        String name = "";
+
+        while (name.isEmpty()){
+            System.out.print("Enter your name: ");
+            name = input.nextLine();
+        }
+
+        System.out.println("hello! " + name);
+
+        String response = "";
+
+        while (!response.equals("Q")){
+            System.out.println("\n\nYou are playing a game:");
+            System.out.print("Press Q to quit: ");
+            response = input.next().toUpperCase();
+        }
+
+        //same goes for do while
+
         input.close();
     }
 }
