@@ -47,10 +47,22 @@ public class Operators {
         System.out.println("Is a <= b : " + d);
         System.out.println("-------------------------------------------------------");
 
-        // Logical Operators (AND, OR, NOT)
+        // Logical Operators (AND, OR, NOT, [&&, ||, !])
         System.out.println("Representation of Logical Operators :");
-        System.out.println(a > 5 && b < 5);
-        System.out.println(a > 5 || b < 5);
+
+        double temp = -10;
+        boolean isSunny = true;
+
+        if(temp <= 30 && temp >= 0 && isSunny){
+            System.out.println("the weather is Good.");
+            System.out.println("It is Sunny outside.");
+        } else if (temp <= 30 && temp >= 0 && !isSunny) {
+            System.out.println("the weather is Good.");
+            System.out.println("It is Cloudy outside.");
+        } else if (temp > 30 || temp < 0) {
+            System.out.println("The weather is bad!");
+        }
+
         System.out.println(!(a < b));
         System.out.println("-------------------------------------------------------");
 
