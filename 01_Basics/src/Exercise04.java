@@ -9,10 +9,12 @@ public class Exercise04 {
         Random rand = new Random();
 
         int number, userNum;
+        int count = 0;
 
         number = rand.nextInt(1,101);
 
         do {
+            count++;
             System.out.print("Enter a number in b/w 1 o 100: ");
             userNum = input.nextInt();
             if (userNum < number){
@@ -23,6 +25,8 @@ public class Exercise04 {
                 System.out.println("too high! try again");
             }
         }while (userNum != number);
+
+        System.out.printf("You take %d attempts!", count);
 
         input.close();
     }
