@@ -36,6 +36,44 @@ public class ControlStatements {
             System.out.println("you are adult!");
         } else if (age < 0) {
             System.out.println("you haven't born yet!");
+            switch (day){
+                case "Monday" -> System.out.println("It is a weekday 1.");
+                case "Tuesday" -> System.out.println("It is a weekday 2.");
+                case "Wednesday" -> System.out.println("It is a weekday 3.");
+                case "Thursday" -> System.out.println("It is a weekday 4.");
+                case "Friday" -> System.out.println("It is a weekday 5.");
+                case "Saturday", "Sunday"
+                        -> System.out.println("It is a weekend.");
+                default -> System.out.println(day + " is not a day.");
+            }
+
+            // while loop = repeat some code forever
+            //              while some condition remains true
+
+            String name = "";
+
+            while (name.isEmpty()){
+                System.out.print("Enter your name: ");
+                name = input.nextLine();
+            }
+
+            System.out.println("hello! " + name);
+
+            String response = "";
+
+            while (!response.equals("Q")){
+                System.out.println("\n\nYou are playing a game:");
+                System.out.print("Press Q to quit: ");
+                response = input.next().toUpperCase();
+            }
+
+            //same goes for do while
+
+            // for loops = execute some code a CERTAIN amount of time
+
+            for (int i = 0; i < 10; i++){
+                System.out.println(i+1 + " times pizza.");
+            }
         } else {
             System.out.println("you are a child!");
         }
@@ -74,39 +112,29 @@ public class ControlStatements {
         System.out.print("Enter the Day: ");
         day = input.nextLine();
 
-        switch (day){
-            case "Monday" -> System.out.println("It is a weekday 1.");
-            case "Tuesday" -> System.out.println("It is a weekday 2.");
-            case "Wednesday" -> System.out.println("It is a weekday 3.");
-            case "Thursday" -> System.out.println("It is a weekday 4.");
-            case "Friday" -> System.out.println("It is a weekday 5.");
-            case "Saturday", "Sunday"
-                    -> System.out.println("It is a weekend.");
-            default -> System.out.println(day + " is not a day.");
+
+        // break = break out of a loop (stop)
+        // continue = skip current iteration of a loop (skip)
+        for (int i = 0; i < 10; i++) {
+
+            if (i == 5 ){
+                //break;// break the loop
+                continue; // skip the 5th loop
+            }
+
+            System.out.print(i + " ");
         }
 
-        // while loop = repeat some code forever
-        //              while some condition remains true
+        // nested loop = A loop inside another loop
+        //               used often with matrix or DSA
 
-        String name = "";
-
-        while (name.isEmpty()){
-            System.out.print("Enter your name: ");
-            name = input.nextLine();
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
         }
-
-        System.out.println("hello! " + name);
-
-        String response = "";
-
-        while (!response.equals("Q")){
-            System.out.println("\n\nYou are playing a game:");
-            System.out.print("Press Q to quit: ");
-            response = input.next().toUpperCase();
-        }
-
-        //same goes for do while
-
+        
         input.close();
     }
 }
