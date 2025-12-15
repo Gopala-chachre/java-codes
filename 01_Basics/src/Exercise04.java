@@ -10,10 +10,10 @@ public class Exercise04 {
 
         int number, userNum;
 
-        number = rand.nextInt(1,11);
+        number = rand.nextInt(1,101);
 
         do {
-            System.out.print("Enter a number in b/w 1 o 10: ");
+            System.out.print("Enter a number in b/w 1 o 100: ");
             userNum = input.nextInt();
             if (userNum < number){
                 System.out.println("too low! Try again");
