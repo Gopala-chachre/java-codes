@@ -67,6 +67,24 @@ public class ControlStatements {
             System.out.println("So your total amount is: ₹" + price);
         }
 
+        // Enhanced switch = A replacement to many else if statements (java14 feature)
+
+        String day;
+
+        System.out.print("Enter the Day: ");
+        day = input.nextLine();
+
+        switch (day){
+            case "Monday" -> System.out.println("It is a weekday 1.");
+            case "Tuesday" -> System.out.println("It is a weekday 2.");
+            case "Wednesday" -> System.out.println("It is a weekday 3.");
+            case "Thursday" -> System.out.println("It is a weekday 4.");
+            case "Friday" -> System.out.println("It is a weekday 5.");
+            case "Saturday", "Sunday"
+                    -> System.out.println("It is a weekend.");
+            default -> System.out.println(day + " is not a day.");
+        }
+
         input.close();
     }
 }
