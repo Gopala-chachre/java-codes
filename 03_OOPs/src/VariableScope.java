@@ -1,6 +1,6 @@
 public class VariableScope {
 
-    static int x = 3; // class or Global 
+    static int x = 3; // class or Global
 
     public static void main(String[] args) {
 
