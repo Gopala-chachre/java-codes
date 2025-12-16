@@ -28,7 +28,6 @@ public class Exercise02 {
         }else {
             System.out.println("No. of dice must be greater then 0!");
         }
-
     }
 
     static void printDie(int roll){
@@ -76,7 +75,5 @@ public class Exercise02 {
             case 5 -> System.out.println(dice5);
             case 6 -> System.out.println(dice6);
         }
-
     }
-
 }
