@@ -28,7 +28,7 @@ public class Exercise01 {
                     finalBalance += deposit();
                 }
                 case (3) -> {
-                    finalBalance -= withdraw();
+                    finalBalance -= withdraw(finalBalance);
                 }
                 case (4) -> {
                     flag = false;
@@ -64,19 +64,27 @@ public class Exercise01 {
         }
     }
 
-    static double withdraw(){
+    static double withdraw(double balance){
         double amount;
         System.out.println("+--------------------------+");
         System.out.print("Enter the amount to withdraw: ");
         amount = input.nextDouble();
 
-        if (amount < 0){
-            System.out.println("Amount can't be negative or zero.");
-            System.out.println("+-------------------------------+");
+        if (amount > balance){
+            System.out.println("+----------------+");
+            System.out.println("INSUFFICIENT FUNDS");
+            System.out.println("+----------------+");
             return 0;
         }else {
-            return amount;
+            if (amount < 0){
+                System.out.println("Amount can't be negative or zero.");
+                System.out.println("+-------------------------------+");
+                return 0;
+            }else {
+                return amount;
+            }
         }
+
     }
 
 }
