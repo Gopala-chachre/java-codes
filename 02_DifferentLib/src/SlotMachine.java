@@ -2,9 +2,19 @@
 // user bet an amount and the slot will show using the emoji
 // if any matching pair or triple are there and user get the price money
 
+import java.util.Scanner;
+
 public class SlotMachine {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         // Declare variables
+        // {"🐼", "🦄", "🐢", "🐧", "🐬"}
+        int balance = 100;
+        int bet;
+        int payout;
+        String[] row = {"!", "@", "#", "$", "%"};
+
+        System.out.println("Welcome to ");
 
         // Display welcome message
 
@@ -22,5 +32,8 @@ public class SlotMachine {
         // ask to play again
 
         // display Exit message
+        input.close();
+
+
     }
 }
