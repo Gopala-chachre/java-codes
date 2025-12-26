@@ -14,7 +14,10 @@ public class SlotMachine {
         int payout;
         String[] row = {"!", "@", "#", "$", "%"};
 
-        System.out.println("Welcome to ");
+        System.out.println("+--------------------------+");
+        System.out.println("   Welcome to  Java Slots  ");
+        System.out.println(" Symbols: ! | @ | # | $ | %");
+        System.out.println("+--------------------------+");
 
         // Display welcome message
 
