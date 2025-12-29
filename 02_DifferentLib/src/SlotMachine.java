@@ -45,7 +45,8 @@ public class SlotMachine {
 
             // Spin row
             System.out.println("Spinning....");
-            spinRow();
+            row = spinRow();
+            printRows(row);
 
         }
 
@@ -67,7 +68,17 @@ public class SlotMachine {
         String[] row = new String[3];
         Random rand = new Random();
 
-        return new String[0];
+        for (int i = 0; i < 3; i++) {
+            row[i] = symbols[rand.nextInt(symbols.length)];
+        }
+
+        return row;
+    }
+
+    static void printRows(String[] row){
+        System.out.println("+---------+");
+        System.out.println(" " + String.join(" | ", row));
+        System.out.println("+---------+");
     }
 
 }
