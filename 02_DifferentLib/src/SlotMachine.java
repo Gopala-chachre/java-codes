@@ -2,6 +2,7 @@
 // user bet an amount and the slot will show using the emoji
 // if any matching pair or triple are there and user get the price money
 
+import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -14,6 +15,7 @@ public class SlotMachine {
         int bet;
         int payout;
         String[] row;
+        String playAgain;
 
         // Display welcome message
 
@@ -27,6 +29,7 @@ public class SlotMachine {
             System.out.println("Current balance: ₹" + balance);
             System.out.print("Place your bet amount: ");
             bet = input.nextInt();
+            input.nextLine();
 
             // Enter bet amount
             //      Verify if bet > balance
@@ -46,7 +49,11 @@ public class SlotMachine {
             // Spin row
             System.out.println("Spinning....");
             row = spinRow();
+
+            // Print row
             printRows(row);
+
+            // Get Payout
             payout = getPayout(row, bet);
 
             if (payout > 0){
@@ -56,16 +63,17 @@ public class SlotMachine {
                 System.out.println("Sorry you lost this round!!");
             }
 
+            // ask to play again
+            System.out.print("Do you want to play Again? (Y/N) :");
+            playAgain = input.nextLine().toUpperCase();
+
+            if (!playAgain.equals("Y")){
+                break;
+            }
         }
 
-
-
-        // Print row
-
-        // Get Payout
-        // ask to play again
-
         // display Exit message
+        System.out.println("GAME OVER! Your final balance is: ₹" + balance);
         input.close();
     }
 
