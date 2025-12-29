@@ -2,33 +2,55 @@
 // user bet an amount and the slot will show using the emoji
 // if any matching pair or triple are there and user get the price money
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class SlotMachine {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         // Declare variables
-        // {"🐼", "🦄", "🐢", "🐧", "🐬"}
+
         int balance = 100;
         int bet;
         int payout;
-        String[] row = {"!", "@", "#", "$", "%"};
+        String[] row;
+
+        // Display welcome message
 
         System.out.println("+--------------------------+");
         System.out.println("   Welcome to  Java Slots  ");
         System.out.println(" Symbols: ! | @ | # | $ | %");
         System.out.println("+--------------------------+");
 
-        // Display welcome message
-
         // Play if balance > 0
+        while (balance > 0){
+            System.out.println("Current balance: ₹" + balance);
+            System.out.print("Place your bet amount: ");
+            bet = input.nextInt();
 
-        // Enter bet amount
-        //      Verify if bet > balance
-        //      Verify if bet > 0
-        //      Subtract bet From balance
+            // Enter bet amount
+            //      Verify if bet > balance
+            //      Verify if bet > 0
+            //      Subtract bet From balance
 
-        // Spin row
+            if (bet > balance){
+                System.out.println("\nINSUFFICIENT FUNDS\n");
+                continue;
+            } else if (bet <= 0){
+                System.out.println("\nBET MUST BE GREATER THEN ZERO.\n");
+                continue;
+            } else{
+                balance -= bet;
+            }
+
+            // Spin row
+            System.out.println("Spinning....");
+            spinRow();
+
+        }
+
+
+
         // Print row
 
         // Get Payout
@@ -36,7 +58,16 @@ public class SlotMachine {
 
         // display Exit message
         input.close();
-
-
     }
+
+    static String[] spinRow(){
+
+        // {"🐼", "🦄", "🐢", "🐧", "🐬"}
+        String[] symbols = {"!", "@", "#", "$", "%"};
+        String[] row = new String[3];
+        Random rand = new Random();
+
+        return new String[0];
+    }
+
 }
