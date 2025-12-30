@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.util.Scanner;
 
 public class OOPs { // class severs as the blueprints to creates objects
@@ -12,15 +11,34 @@ public class OOPs { // class severs as the blueprints to creates objects
         // to understand how to use object
         Scanner input = new Scanner(System.in); // it is also an object
 
-        Car car = new Car();
-        System.out.println(car.model); // " . " dot (or dot operator) is used to access the thing within the object
-        System.out.println(car.make);
-        System.out.println(car.year);
-        System.out.println(car.price);
-        System.out.println(car.isRunning);
+        Car car1 = new Car();
+        System.out.println(car1.model); // " . " dot (or dot operator) is used to access the thing within the object
+        System.out.println(car1.make);
+        System.out.println(car1.year);
+        System.out.println(car1.price);
+        System.out.println(car1.isRunning);
 
-        car.isRunning = true;
-        System.out.println(car.isRunning);
+//        car.isRunning = true;
+//        System.out.println(car.isRunning);
+
+        System.out.println(car1.isRunning);
+        car1.start();
+        System.out.println(car1.isRunning);
+        car1.stop();
+        System.out.println(car1.isRunning);
+
+        car1.drive();
+        car1.brake();
+
+        // but if
+        Car car2 = new Car();
+
+        // they both have the same attributes
+        System.out.println(car1.make + " " + car1.model);
+        System.out.println(car2.make + " " + car2.model);
+
+        // but different cars have different attributes
+        // so to overcome this problem java have "CONSTRUCTORS"
 
 
         input.close();
