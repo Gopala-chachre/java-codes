@@ -7,5 +7,19 @@ public class Constructors02 {
 
         // to understand that me make a student class
 
+        Student student1 = new Student("John Wick", 32, 8.9);  // the constructor is automatically called when we make that object
+        Student student2 = new Student("Trump", 41, 4.6);
+        Student student3 = new Student("Mike", 17, 7.7); // and we must have to pass the argument which is in the constructor
+
+        /*
+        both print same if no constructor is there
+        System.out.println(student1.name);
+        System.out.println(student2.name);
+         */
+
+        System.out.println(student1.name + " " + student1.age + " " + student1.gpa);
+        System.out.println(student2.name + " " + student2.age + " " + student2.gpa);
+        System.out.println(student3.name + " " + student3.age + " " + student3.gpa);
+
     }
 }
