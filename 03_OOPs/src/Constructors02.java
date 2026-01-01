@@ -17,9 +17,13 @@ public class Constructors02 {
         System.out.println(student2.name);
          */
 
-        System.out.println(student1.name + " " + student1.age + " " + student1.gpa);
-        System.out.println(student2.name + " " + student2.age + " " + student2.gpa);
-        System.out.println(student3.name + " " + student3.age + " " + student3.gpa);
+        System.out.println(student1.name + " " + student1.age + " " + student1.gpa + " " + student1.isEnrolled);
+        System.out.println(student2.name + " " + student2.age + " " + student2.gpa + " " + student2.isEnrolled);
+        System.out.println(student3.name + " " + student3.age + " " + student3.gpa + " " + student3.isEnrolled);
+
+        student1.study();
+        student2.study();
+        student3.study();
 
     }
 }
