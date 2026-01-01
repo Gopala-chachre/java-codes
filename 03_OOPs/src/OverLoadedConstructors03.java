@@ -5,6 +5,8 @@ public class OverLoadedConstructors03 {
         //                           with different parameters lists.
         //                           Enables objects to be initialized in various ways.
 
+        // this wood be great where some fields are optional while creating the objects
+
         // to understand that me make a User class
 
         User user1 = new User("John wick");
