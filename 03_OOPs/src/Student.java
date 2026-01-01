@@ -13,6 +13,12 @@ public class Student {
         this.gpa = gpa;    // so we use the 'this' keyword to refers the current object
         // and it is not compulsory to have the same name as at assigning
 
+        this.isEnrolled = true;
+
+    }
+
+    void study(){
+        System.out.println(this.name + " is studying.");
     }
     
 }
