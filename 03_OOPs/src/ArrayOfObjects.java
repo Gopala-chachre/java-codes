@@ -24,7 +24,7 @@ public class ArrayOfObjects {
         for (Car_02 car : cars2) {
             car.drive();
         }
-        
+
         for (Car_02 car : cars2){
             car.color = "black";
         }
