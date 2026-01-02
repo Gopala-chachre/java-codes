@@ -14,7 +14,12 @@ public class StaticKeyword_03 {
         System.out.println(Friend.numOfFriends); // to use the static attribute or
                                                  // method we prefer to use the class name instead of the object name
 
+        Friend friend3 = new Friend("Will");
+        Friend friend4 = new Friend("Max");
+
         Friend.showFriends();
+
+        //Math.round(3.99); it is a utility class and round is a static method so by that we can assess it by only class name
 
     }
 }
