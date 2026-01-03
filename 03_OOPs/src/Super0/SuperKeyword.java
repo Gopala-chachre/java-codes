@@ -13,10 +13,14 @@ public class SuperKeyword {
 
         person1.showName();
 
-        Student student = new Student("Mike", "Weeler", 7.7);
+        Student student = new Student("Mike", "Wheeler", 7.7);
         student.showName();
 
         System.out.println(student.gpa);
+        student.showGPA();
+
+        Employee employee = new Employee("Dustin", "Wardrobe", 50000);
+        employee.showSalary();
 
     }
 }

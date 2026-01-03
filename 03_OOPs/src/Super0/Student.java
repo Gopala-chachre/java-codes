@@ -9,4 +9,8 @@ public class Student extends Person{
         this.gpa = gpa;
     }
 
+    void showGPA(){
+        System.out.println(this.firstName + "'s gpa is " + this.gpa);
+    }
+
 }
