@@ -1,5 +1,3 @@
-package Inheritance;
-
 public class Inheritance_04 {
     public static void main(String[] args) {
 
