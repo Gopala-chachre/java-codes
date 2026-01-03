@@ -1,3 +1,5 @@
+package Static0;
+
 public class StaticKeyword_03 {
     public static void main(String[] args) {
 

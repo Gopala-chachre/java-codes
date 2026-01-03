@@ -1,3 +1,5 @@
+package Method;
+
 public class VarargsInfo {
     public static void main(String[] args) {
 

@@ -1,3 +1,5 @@
+package Method;
+
 public class VariableScope {
 
     static int x = 3; // class or Global

@@ -1,5 +1,5 @@
 // we will simulate the number pad
-
+package Exercise;
 public class Exercise03 {
     public static void main(String[] args) {
 

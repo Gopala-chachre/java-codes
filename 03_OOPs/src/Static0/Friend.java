@@ -1,3 +1,5 @@
+package Static0;
+
 public class Friend {
 
     // if there is no static then every object have their own copy of this int variable

@@ -1,3 +1,5 @@
+package Objects;
+
 import java.util.Scanner;
 
 public class Objects01 {

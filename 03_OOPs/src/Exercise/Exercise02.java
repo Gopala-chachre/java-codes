@@ -1,5 +1,6 @@
 // JAVA DICE ROLLER
 
+package Exercise;
 import java.util.Random;
 import java.util.Scanner;
 

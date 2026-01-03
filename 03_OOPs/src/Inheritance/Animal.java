@@ -1,3 +1,5 @@
+package Inheritance;
+
 public class Animal extends Organism{
 
     void eat(){

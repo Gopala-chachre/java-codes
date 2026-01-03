@@ -1,4 +1,5 @@
 // a small quiz game
+package Exercise;
 
 import java.util.Scanner;
 
