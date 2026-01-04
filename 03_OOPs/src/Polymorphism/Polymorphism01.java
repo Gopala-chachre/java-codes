@@ -17,5 +17,22 @@ public class Polymorphism01 {
         bike.go();
         boat.go();
 
+        // Car[] cars = {car, bike, boat} but it gives error because bike and boat is not identifies as car
+        // Bike[] bikes = {car, bike, boat} same for bike
+        // Boat[] boats = {car, bike, boat} and for boat
+
+        // instead me make array of vehicle class because car, boat, & bike are identifies as a vehicle
+        Vehicle[] vehicles = {car, bike, boat};  // because they all extends Vehicle class
+
+        System.out.println();
+        for(Vehicle vehicle : vehicles){
+            vehicle.go();
+        }
+
+
+        /*
+            Polymorphism can also be achieved by interface.
+         */
+
     }
 }
