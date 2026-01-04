@@ -15,9 +15,19 @@ public class Abstraction {
 
         // Shape shape = new Shape(); we cannot make that object because it is an abstract class
 
-        Circle circle = new Circle();
-        Triangle triangle = new Triangle();
-        Rectangle rectangle = new Rectangle();
+        Circle circle = new Circle(7);
+        Triangle triangle = new Triangle(3,5);
+        Rectangle rectangle = new Rectangle(5,7);
+
+        circle.display();
+        triangle.display();
+        rectangle.display();
+        System.out.println();
+
+        System.out.println(circle.area());
+        System.out.println(triangle.area());
+        System.out.println(rectangle.area());
+
 
     }
 }
