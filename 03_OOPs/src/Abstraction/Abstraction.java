@@ -13,7 +13,11 @@ public class Abstraction {
         // For Example = When we go for learning a CAR we just go for the ACCELERATOR ,BRAKE & GEARS
         //               not for how Engine works.
 
+        // Shape shape = new Shape(); we cannot make that object because it is an abstract class
 
+        Circle circle = new Circle();
+        Triangle triangle = new Triangle();
+        Rectangle rectangle = new Rectangle();
 
     }
 }
