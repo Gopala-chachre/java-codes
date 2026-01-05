@@ -41,7 +41,7 @@ public class ArrayLIST {
 
         Collections.sort(fruits);
         System.out.println(fruits);
-        
+
 
         list1.remove(0);
         list2.remove(1);
