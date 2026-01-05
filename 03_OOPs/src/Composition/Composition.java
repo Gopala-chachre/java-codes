@@ -7,7 +7,7 @@ public class Composition {
         //               For example, an Engine is "part of" car.
         //               Allows complex object to be constructed from smaller objects.
 
-        Car car = new Car("Mastung", 1969, "V8");
+        Car car = new Car("Mustang", 1969, "V8");
 
         System.out.println(car.model);
         System.out.println(car.year);
