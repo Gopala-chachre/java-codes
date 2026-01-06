@@ -1,0 +1,10 @@
+india
+china
+canada
+australia
+germany
+france
+japan
+brazil
+russia
+italy
