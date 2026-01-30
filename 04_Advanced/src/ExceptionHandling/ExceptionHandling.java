@@ -19,7 +19,7 @@ public class ExceptionHandling {
             System.out.println(num);
         }
         catch (InputMismatchException e){
-            System.out.println("This is not a number!!!");
+            System.out.println("This is not a Integer!!!");
         }
         catch (ArithmeticException e){
             System.out.println("you can't divide by zero!");
