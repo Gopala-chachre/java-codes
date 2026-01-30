@@ -38,6 +38,20 @@ public class SinglyLinkedListOperations {
         }
     }
 
+
+    public void insertAtPosition(int data, int position){
+        Node node = new Node();
+        node.data = data;
+
+        if (head == null){
+            head = node;
+        }else if(position == 1){
+            Node temp = head;
+            head = node;
+            node.next = temp;
+        }
+    }
+
     public void show(){
         Node node = head;
         while (node.next != null){
